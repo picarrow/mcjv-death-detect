@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "death_detect:load",
+    "gu:load"
+  ]
+}

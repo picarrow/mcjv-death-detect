@@ -1,0 +1,5 @@
+# AUTHOR: Picarrow
+
+scoreboard players set #_found ddt._ 0
+$execute as $(uuid) run function death_detect:check_if_found
+execute if score #_found ddt._ matches 0 run function death_detect:check_if_not_found with storage death_detect:_ _.tentry
