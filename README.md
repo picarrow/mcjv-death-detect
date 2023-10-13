@@ -90,15 +90,15 @@ This Minecraft data pack library provides an easy method to execute as mobs that
 Download the data pack from releases and install the ZIP into your data packs folder.
 The ZIP does not need to be extracted.
 ## 🟧 How to Use
-This data pack should not be modified directly, as that can contribute to compatibility issues across data packs.
-The only intended way to interface with it is by overriding the **death_detect:tick_dying** function tag.
-Functions appended to the **death_detect:tick_dying** function tag via override will execute as each dying mob of that tick.
+This data pack should not be modified directly, as that can contribute to compatibility issues across data packs.  
+The only intended way to interface with it is by overriding the **death_detect:tick_dying** function tag.  
+Functions appended to the **death_detect:tick_dying** function tag via override will execute as each dying mob of that tick.  
 ***Do not*** flag the json key replace as true in overriding function tags as that can also contribute to compatitbility issues.
 
-If a function called by death_detect:tick_dying loses the dying mob from its context, it can be retrieved using macros.
-Call another function with storage **death_detect:_** and path **_.temp.checking.entry**.
-The dying mob's UUID, which can be executed as, is accessed using the macro entry **<span>$</span>(uuid)**.
+If a function called by death_detect:tick_dying loses the dying mob from its context, it can be retrieved using macros.  
+Call another function with storage **death_detect:_** and path **_.temp.checking.entry**.  
+The dying mob's UUID, which can be executed as, is accessed using the macro entry **<span>$</span>(uuid)**.  
 **<span>$</span>(name)**, if it's a player, and **<span>$</span>(score_holder)** are also provided.
 ## 🟧 Credit
-Thanks to [@gibbsly](https://github.com/gibbsly), who authored the gu namespace.
+Thanks to [@gibbsly](https://github.com/gibbsly), who authored the gu namespace.  
 Thanks to [@CloudWolfYT](https://github.com/CloudWolfYT), who discovered a neat way to extract player names.
