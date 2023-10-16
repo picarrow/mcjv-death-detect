@@ -6,3 +6,5 @@ execute if entity @s[type=minecraft:player] run function death_detect:mapping/ma
 execute if entity @s[type=!minecraft:player] run function death_detect:mapping/map_non_player
 
 data modify storage death_detect:_ _.map append from storage death_detect:_ _.temp.mapping.entry
+
+data remove storage death_detect:_ _.temp.mapping
